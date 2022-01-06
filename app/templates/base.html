@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Marvel Characters</title>
+        {% else %}
+        <title>Welcome to Marvel Characters</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Marvel Characters: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
